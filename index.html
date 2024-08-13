@@ -1,0 +1,198 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Designer Portfolio</title>
+</head>
+<body>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #bed43d;
+  color: #fff;
+}
+
+header {
+  background-color: #202020;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo h1 {
+  color: #ffffff;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header .menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+header .menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 4px;
+  border-radius: 3px;
+}
+
+.intro {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.intro h2 {
+  color: #9b117d;
+  font-size: 24px;
+}
+
+.intro h1 {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.intro p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.icons a {
+  display: inline-block;
+  margin: 0 10px;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 5);
+  transition: 0,5s ease;
+}
+
+.icons a:hover {
+color: white;
+transform:translate(0,-30px);
+box-shadow: 0 20px 8px rgba(0, 0, 0, 7);
+}
+
+.icons a:nth-child(1):hover {
+  background-color: #3b5998;
+}
+.icons a:nth-child(2):hover {
+  background-color: #1da1f2;
+}
+.icons a:nth-child(3):hover {
+  background-color: #ff0000;
+}
+.icons a:nth-child(4):hover {
+  background-color: #00ff00;
+}
+.icons a:nth-child(5):hover {
+  background-color: #b22222;
+}
+
+.icons img{
+  width: 30px;
+  height: 30px;
+}
+
+.profile-pic {
+  margin-top: 40px;
+}
+
+.profile-pic img {
+  width: 140px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #202020;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      text-align: center;
+  }
+
+  header .menu-toggle {
+      display: flex;
+  }
+
+  header .menu-toggle.active + ul {
+      display: flex;
+  }
+}
+    </style>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>fatih</h1>
+            </div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h2>WELCOME!</h2>
+                <h1>I Am Web Developer</h1>
+                <p>I'm a Web Developer with ability stil new be. My expertise is to create and Websites design, graphic design and many more...</p>
+                <div class="icons">
+                    <a href="#"><img src="Facebook_logo_(square).png" alt="Facebook"></a>
+                    <a href="#"><img src="whatsapp-square-social-media-512.webp" alt="WhatsApp"></a>
+                    <a href="#"><img src="Instagram_icon.png.webp" alt="Instagram"></a>
+                    <a href="#"><img src="tiktok-icon-logo-1CB398A1BD-seeklogo.com.png" alt="tiktok"></a>
+                </div>
+                <div class="profile-pic">
+                    <img src="WhatsApp Image 2024-07-28 at 15.37.19.jpeg" alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+    </main>
+     <!-- Memanggildocument.getElementById('menu-toggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.getElementById('nav-links').classList.toggle('active');
+}); file JS eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
